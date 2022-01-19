@@ -4,10 +4,9 @@
 
 int main(void)
 {
+  printf("You are an adventurer with a bag on your back, ready to explore!\n");
+  printf("What would you like to do next?\n")
 
-    char *intro = "You are an adventurer waiting togo out into the big wide world where you will be encountering foes magic and all sorts of wonders.";
 
-    char *intro2 = "You have got to make sure that your bag is both packed and ready to store the things you find along the way.";
-
-    printf("%s\n%s\n", intro, intro2);
 }
+ 
