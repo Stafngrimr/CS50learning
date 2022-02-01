@@ -40,7 +40,7 @@ int main(void)
 person *create_family(int generations)
 {
     // TODO: Allocate memory for new person
-    person newPerson* = malloc(sizeof(person));
+    person *newPerson = malloc(sizeof(person));
     if (newPerson == NULL)
     {
       return NULL;
@@ -54,8 +54,32 @@ person *create_family(int generations)
         newPerson->parents[1] = create_family(generations-1);
 
         // TODO: Randomly assign child alleles based on parents
-        newPerson->alleles[0] = *parents[0]
-         This is where we type the same thing and omg.
+        int tmp1 = rand() % 2;
+        if (tmp1 == 0)
+        {
+          newPerson->alleles[0] = newPerson->parents[0]->alleles[0];
+        }
+
+        else
+        {
+          newPerson->alleles[0] = newPerson->parents[0]->alleles[1];
+        }
+
+        tmp1 = rand() % 2;
+        if (tmp1 == 0)
+        {
+          newPerson->alleles[1] = newPerson->parents[1]->alleles[0];
+        }
+
+        else
+        {
+          newPerson->alleles[1] = newPerson->parents[1]->alleles[1];
+        }
+
+        // Assigning each allele from each parent, but then picking the random allele
+        // from the 2 options for each one.
+        // 1) assign parent 2) randomise from alleles 3) assign
+        // Above is currently just temporary
 
     }
 
@@ -72,8 +96,7 @@ person *create_family(int generations)
     }
 
     // TODO: Return newly created person
-    p = newPerson;
-    return NULL;
+    return newPerson;
 }
 
 // Free `p` and all ancestors of `p`.
@@ -84,8 +107,13 @@ void free_family(person *p)
     {
       return;
     }
-    // TODO: Free parents & then child
-    free_family(p->parents[0])
+
+    // TODO: Free parents
+    free_family(p->parents[0]);
+    free_family(p->parents[1]);
+
+    // TODO: Free child
+    free(p);
 }
 
 // Print each family member and their alleles.
@@ -94,7 +122,7 @@ void print_family(person *p, int generation)
     // Handle base case
     if (p == NULL)
     {
-        return;
+      return;
     }
 
     // Print indentation
