@@ -76,11 +76,6 @@ person *create_family(int generations)
           newPerson->alleles[1] = newPerson->parents[1]->alleles[1];
         }
 
-        // Assigning each allele from each parent, but then picking the random allele
-        // from the 2 options for each one.
-        // 1) assign parent 2) randomise from alleles 3) assign
-        // Above is currently just temporary
-
     }
 
     // Generation without parent data

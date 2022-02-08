@@ -1,8 +1,4 @@
-This keeps going on forever or until someone enter 3.
-Perhaps the game starts with a proper intro.. you're getting ready to go on an adventure and it's important to check the content of your bag, but also to keep checking on the bag as you're adding more things into it.
-
-
-
+# TODAY
 -Game should spit out the introduction
 -Then it should start asking the 3 questions
 -Player inputs 1, 2 or 3, anything else and it says Nope, pick again mate
@@ -18,13 +14,26 @@ Once you had an item, you've got it. So perhaps theres even a TOTAL number of th
 What about fishing? Adding an extra option, not just going forwards, but stopping at the nearby lake to do some fishing, and casting the line over and over.
 
 
----------------------------------
-Today Shit
----------------------------------
-We are still just able to sit and consider. Though yesterday there was such a great feeling of the day feeling great. This morning we are feeling quite procrasinatey, but we still have stuff that we want to do, and we are slowly getting there. It's just about getting used to being properly productive again. I think we are going to have a day of hardcore coding. That would be nice. We don't have to worry about cooking anything that's for sure. We are going to eat a lovely big bowl of soup for lunch which will be nice and warming.
+-------------
+# Today Shit
+-------------
 
-Apart from that we want to concentrate on CS50, but also perhaps work on the cgame that we've been doing for fun. That's been a nice distraction and perhaps it'll be again later today. But for now we should be concentrating on finishing the randomising of these goddamn alleles. There's a TODO list below which works out quite well for the
+Today we're going to kick some ass code wise and then we're going to play WoW. We've got plenty of good salady bits to be getting on with and for some reason we kind of feel like eating fish fingers later so that makes life a lot easier.
+
+Food is sorted, tomorrow is Wednesday and we'll worry about shopping another time I think. Let's get through what we have.
+
+We were worrying about money earlier. We need to work out how much we owe Zoe. It was a lot. We also have to decide what we really think about going up to Manchester.. seems like a lot but the reason behind the decision is pretty sound. Tim was not keen and I get why but I do feel like.. it'd be a nice thing to do and the boys will appreciate it. Where we're all doing to sleep I don't know. We should answer soemthing today.
+
+We've also got vday coming up. That's gonna be lovely. We're going to buy flowers and take her to dinner . And then perhaps we'll be there for quite a number of days. We'll definitely double check on that with her.
+
+You're doing fine though. You have savings and that's what they're for. We're going to be dipping into them but we have to try and not panic. We just need to be sensible, and then also we need to start looking for a job soon. We're going to be not doign much spending after these coming events at all. There's no reason to. We can go to Manchester and break to the egg that we won't be going up to Roadburn. That'll be a good thing and he'll appreciate that I came up so that'll soften the blow..
+
+This year you're going to get a job in web development. You can keep doing your course and everything but one of the big leaps will be learning the industry itself and how these sorts of companies work. Perhaps aimer for the larger companies will be better in that respect, even though you know you'd prefer a smaller one.
+
+Right, let's get our heads down for a bit and finish breakfast. Then we can go back to bed in a little while.
+
+
 
 TODO:
--Get that final date for the job
--work out the droplet yo ugot. Is it really that good?
+-Definitely do some work on the droplet
+-Work out what you'll need to move the website and manage it all yourself
