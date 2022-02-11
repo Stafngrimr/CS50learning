@@ -39,7 +39,7 @@ int main(void)
 // Create a new individual with `generations`
 person *create_family(int generations)
 {
-    // TODO: Allocate memory for new person
+    // Allocate memory for new person
     person *newPerson = malloc(sizeof(person));
     if (newPerson == NULL)
     {
@@ -49,11 +49,11 @@ person *create_family(int generations)
     // Generation with parent data
     if (generations > 1)
     {
-        // TODO: Recursively create blood type histories for parents
+        // Recursively create blood type histories for parents
         newPerson->parents[0] = create_family(generations-1);
         newPerson->parents[1] = create_family(generations-1);
 
-        // TODO: Randomly assign child alleles based on parents
+        // Randomly assign child alleles based on parents
         int tmp1 = rand() % 2;
         if (tmp1 == 0)
         {
@@ -81,33 +81,33 @@ person *create_family(int generations)
     // Generation without parent data
     else
     {
-        // TODO: Set parent pointers to NULL
+        // Set parent pointers to NULL
         newPerson->parents[0] = NULL;
         newPerson->parents[1] = NULL;
 
-        // TODO: Randomly assign alleles
+        // Randomly assign alleles
         newPerson->alleles[0] = random_allele();
         newPerson->alleles[1] = random_allele();
     }
 
-    // TODO: Return newly created person
+    // Return newly created person
     return newPerson;
 }
 
 // Free `p` and all ancestors of `p`.
 void free_family(person *p)
 {
-    // TODO: Handle base case
+    // Handle base case
     if (p == NULL)
     {
       return;
     }
 
-    // TODO: Free parents
+    // Free parents
     free_family(p->parents[0]);
     free_family(p->parents[1]);
 
-    // TODO: Free child
+    // Free child
     free(p);
 }
 
