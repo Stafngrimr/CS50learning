@@ -18,22 +18,23 @@ What about fishing? Adding an extra option, not just going forwards, but stoppin
 # Today Shit
 -------------
 
-Today we're going to kick some ass code wise and then we're going to play WoW. We've got plenty of good salady bits to be getting on with and for some reason we kind of feel like eating fish fingers later so that makes life a lot easier.
+Alrighty. We had such a great day off yesterday where we basically just gamed for the entire day. It'd be cool to get fishing and mining up to speed.
 
-Food is sorted, tomorrow is Wednesday and we'll worry about shopping another time I think. Let's get through what we have.
+That can be laters task. Right now we're going to work on our game. Perhaps even get it to a finished state! Anyway.
 
-We were worrying about money earlier. We need to work out how much we owe Zoe. It was a lot. We also have to decide what we really think about going up to Manchester.. seems like a lot but the reason behind the decision is pretty sound. Tim was not keen and I get why but I do feel like.. it'd be a nice thing to do and the boys will appreciate it. Where we're all doing to sleep I don't know. We should answer soemthing today.
+Let's make the serious plan for it. Where the functions are going to go. What part of the code is going to be in the main and what is going to be a separate function.
 
-We've also got vday coming up. That's gonna be lovely. We're going to buy flowers and take her to dinner . And then perhaps we'll be there for quite a number of days. We'll definitely double check on that with her.
-
-You're doing fine though. You have savings and that's what they're for. We're going to be dipping into them but we have to try and not panic. We just need to be sensible, and then also we need to start looking for a job soon. We're going to be not doign much spending after these coming events at all. There's no reason to. We can go to Manchester and break to the egg that we won't be going up to Roadburn. That'll be a good thing and he'll appreciate that I came up so that'll soften the blow..
-
-This year you're going to get a job in web development. You can keep doing your course and everything but one of the big leaps will be learning the industry itself and how these sorts of companies work. Perhaps aimer for the larger companies will be better in that respect, even though you know you'd prefer a smaller one.
-
-Right, let's get our heads down for a bit and finish breakfast. Then we can go back to bed in a little while.
-
-
-
-TODO:
 -Definitely do some work on the droplet
 -Work out what you'll need to move the website and manage it all yourself
+
+Game:
+-make list of 30 items
+-write the code.
+-leave lots of comments and todos.
+
+
+-Give intro - just a string and appropriate spaces/line breaks
+-Then list the current contents of the pack (3 items)
+
+-Then give the user 3 options
+-
