@@ -169,3 +169,13 @@
         writer = csv.writer(file)
 
         writer.writerow([name, number])
+# From the CS50 tournaments.py problem
+    def simulate_tournament(teams):
+    """Simulate a tournament. Return name of winning team."""
+    # TODO
+    while len(teams) > 1:
+        teams = simulate_round(teams)
+
+    # we want the 1 and only item in the list, hence 0
+    # we only want to return the team name, hence "team"
+    return teams[0]["team"]
