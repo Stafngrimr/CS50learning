@@ -179,3 +179,45 @@
     # we want the 1 and only item in the list, hence 0
     # we only want to return the team name, hence "team"
     return teams[0]["team"]
+
+# favourites.py
+    import csv
+
+    with open("Favourite TV Shows.csv", "r") as file:
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            print(row[1])
+
+# Better mthod for favourites.py
+    import csv
+
+    titles = {}
+
+    with open("Favourite TV Shows.csv") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            titles.add(row["title"].strip().upper())
+            if title in titles:
+                titles[title] += 1
+            else:
+                titles[title] = 1
+    def f(title):
+        return titles[title]
+
+    for title in sorted(titles, key=f, reverse=True):
+        print(title, titles[title])
+
+# favourites.py - Version 2
+    import csv
+
+    title = input("Title: ").strip().upper()
+
+    with open("Favourite TV Shows.csv", "r") as file:
+        reader = csv.DictReader(file)
+        counter = 0
+        for row in reader:
+            if row["title"].strip().upper() == title:
+                counter += 1
+
+    print(counter)
