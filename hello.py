@@ -169,3 +169,73 @@
         writer = csv.writer(file)
 
         writer.writerow([name, number])
+# From the CS50 tournaments.py problem
+    def simulate_tournament(teams):
+    """Simulate a tournament. Return name of winning team."""
+    # TODO
+    while len(teams) > 1:
+        teams = simulate_round(teams)
+
+    # we want the 1 and only item in the list, hence 0
+    # we only want to return the team name, hence "team"
+    return teams[0]["team"]
+
+# favourites.py
+    import csv
+
+    with open("Favourite TV Shows.csv", "r") as file:
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            print(row[1])
+
+# Better mthod for favourites.py
+    import csv
+
+    titles = {}
+
+    with open("Favourite TV Shows.csv") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            titles.add(row["title"].strip().upper())
+            if title in titles:
+                titles[title] += 1
+            else:
+                titles[title] = 1
+    def f(title):
+        return titles[title]
+
+    for title in sorted(titles, key=f, reverse=True):
+        print(title, titles[title])
+
+# favourites.py - Version 2
+    import csv
+
+    title = input("Title: ").strip().upper()
+
+    with open("Favourite TV Shows.csv", "r") as file:
+        reader = csv.DictReader(file)
+        counter = 0
+        for row in reader:
+            if row["title"].strip().upper() == title:
+                counter += 1
+
+    print(counter)
+
+# Final version of favourites.py using SQL
+    import csv
+    from cs50 import SQL
+
+    open("showsdb", "w").close()
+    db = SQL("sqlite:///shows.db")
+
+    db.execute("CREATE TABLE shows (id INTEGER, title TEXT, PRIMARY KEY(id))")
+    db-execute("CREATE TABLE genres (show_id INTEGER, genre TEXT, FOREIGN KEY(show_id) REFERENCES shows(id))")
+
+    with open("Favourite TV shows.csv", "r") as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            title = row["title"].strip().upper()
+            id = db.execute("INSERT INTO shows(title) VALUES(?)", title)
+            for genre in row["genres"].split(", "):
+                db.execute("INSERT INTO genres(show_id, genre) VALUES(?, ?)", id, genre)

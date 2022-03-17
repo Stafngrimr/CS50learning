@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function() {
+                let button = document.getElementById("r");
+                let btn = document.getElementsByClassName("w");
+
+                button.addEventListener("click", function onClick() {
+                    button.style.backgroundColor = "#1d5e03";
+                    button.style.color = "#fff";
+                });
+
+                btn.addEventListener("click", function onClick() {
+                    btn.style.backgroundColor = "#6e0004";
+                    btn.style.color = "#fff";
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What colour are my underpants?</h3>
+                <button class="w">Blue</button>
+                <button class="w">Green</button>
+                <button id="r">Black, duh.</button>
+                <button class="w">Polkadot</button>
+                <button class="w">Teal</button>
+                <button class="w">Brown</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+
+            </div>
+
+        </div>
+    </body>
+</html>
