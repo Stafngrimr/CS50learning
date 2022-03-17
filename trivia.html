@@ -18,6 +18,11 @@
             incorrect.innerHTML = "CORRECT!!!";
           };
 
+          const fruits = ['Apple', 'Mango', 'Cherry'];
+          fruits.forEach(function(item, index, array) {
+            console.log(item, index);
+          });
+
           document.querySelector("#blue").onclick = function() {
             let colour = document.querySelector("#blue");
             colour.style.backgroundColor = "#6e0004";
@@ -52,13 +57,6 @@
             colour.style.color = "#fff";
             incorrect.innerHTML = "INCORRECT";
           };
-
-          document.querySelector("#reset").onclick = function() {
-            let colour = document.querySelectorAll(".but");
-            colour.style.backgroundColor = "#d9edff";
-            colour.style.color = "#000";
-            incorrect.innerHTML = "";
-          }
 
           //MORE FUNCTIONS HERE PLS
 
