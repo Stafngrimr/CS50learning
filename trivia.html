@@ -8,20 +8,61 @@
 
         <script>
 
-            document.addEventListener("DOMContentLoaded", function() {
-                let button = document.getElementById("r");
-                let btn = document.getElementsByClassName("w");
+        document.addEventListener("DOMContentLoaded", function() {
+          let incorrect = document.querySelector("#incorrect");
 
-                button.addEventListener("click", function onClick() {
-                    button.style.backgroundColor = "#1d5e03";
-                    button.style.color = "#fff";
-                });
+          document.querySelector("#black").onclick = function() {
+            let black = document.querySelector("#black");
+            black.style.backgroundColor = "#1d5e03";
+            black.style.color = "#fff";
+            incorrect.innerHTML = "CORRECT!!!";
+          };
 
-                btn.addEventListener("click", function onClick() {
-                    btn.style.backgroundColor = "#6e0004";
-                    btn.style.color = "#fff";
-                });
-            });
+          document.querySelector("#blue").onclick = function() {
+            let colour = document.querySelector("#blue");
+            colour.style.backgroundColor = "#6e0004";
+            colour.style.color = "#fff";
+            incorrect.innerHTML = "INCORRECT";
+          };
+
+          document.querySelector("#green").onclick = function() {
+            let colour = document.querySelector("#green");
+            colour.style.backgroundColor = "#6e0004";
+            colour.style.color = "#fff";
+            incorrect.innerHTML = "INCORRECT";
+          };
+
+          document.querySelector("#polka").onclick = function() {
+            let colour = document.querySelector("#polka");
+            colour.style.backgroundColor = "#6e0004";
+            colour.style.color = "#fff";
+            incorrect.innerHTML = "INCORRECT";
+          };
+
+          document.querySelector("#teal").onclick = function() {
+            let colour = document.querySelector("#teal");
+            colour.style.backgroundColor = "#6e0004";
+            colour.style.color = "#fff";
+            incorrect.innerHTML = "INCORRECT";
+          };
+
+          document.querySelector("#brown").onclick = function() {
+            let colour = document.querySelector("#brown");
+            colour.style.backgroundColor = "#6e0004";
+            colour.style.color = "#fff";
+            incorrect.innerHTML = "INCORRECT";
+          };
+
+          document.querySelector("#reset").onclick = function() {
+            let colour = document.querySelectorAll(".but");
+            colour.style.backgroundColor = "#d9edff";
+            colour.style.color = "#000";
+            incorrect.innerHTML = "";
+          }
+
+          //MORE FUNCTIONS HERE PLS
+
+        });
 
         </script>
 
@@ -38,17 +79,23 @@
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
                 <h3>What colour are my underpants?</h3>
-                <button class="w">Blue</button>
-                <button class="w">Green</button>
-                <button id="r">Black, duh.</button>
-                <button class="w">Polkadot</button>
-                <button class="w">Teal</button>
-                <button class="w">Brown</button>
+                <p id="incorrect"></p>
+                <button class="but" id="blue">Blue</button>
+                <button class="but" id="green">Green</button>
+                <button class="but" id="black">Black</button>
+                <button class="but" id="polka">Polkadot</button>
+                <button class="but" id="teal">Teal</button>
+                <button class="but" id="brown">Brown</button>
+              </br>
+              </br>
+                <button id="reset">Reset</button>
             </div>
 
             <div class="section">
                 <h2>Part 2: Free Response</h2>
                 <hr>
+                <h3>What is the capital of Spain?</h3>
+                <p id="incorrect2"></p>
 
                 <!-- TODO: Add free response question here -->
 

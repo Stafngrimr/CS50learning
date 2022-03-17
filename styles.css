@@ -49,6 +49,13 @@ button, input[type="submit"] {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     vertical-align: middle;
     font-family: 'Courier New', monospace;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+button#reset {
+  width: 10em;
+  margin-left: 150px;
 }
 
 
