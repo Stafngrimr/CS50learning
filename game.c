@@ -29,8 +29,6 @@ char *item2 = "Two Mana potions";
 char *item3 = "A Vanklet's studded belt";
 int choice;
 
-// TODO : Don't forget to take this random comment out
-
 int main(void)
 {
   // Intro speech & contents of pack
