@@ -4,67 +4,79 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
+
         <title>Trivia!</title>
 
         <script>
 
+        // Add content loaded Event Listener
         document.addEventListener("DOMContentLoaded", function() {
-          let incorrect = document.querySelector("#incorrect");
 
+          // Multiple Choice Question Functions
+
+          // Declare feedback variable
+          let feedback = document.querySelector("#feedback");
+
+          // Correct
           document.querySelector("#black").onclick = function() {
-            let black = document.querySelector("#black");
+            let right = document.querySelector("#black");
             black.style.backgroundColor = "#1d5e03";
             black.style.color = "#fff";
-            incorrect.innerHTML = "CORRECT!!!";
+            feedback.innerHTML = "CORRECT!";
           };
 
-          const fruits = ['Apple', 'Mango', 'Cherry'];
-          fruits.forEach(function(item, index, array) {
-            console.log(item, index);
+          // Incorrect
+          let wrong = document.querySelectorAll(".wrong");
+          for (let i = 0; i < wrong.length; i++) {
+            wrong[i].addEventListener("click", function() {
+              wrong[i].style.backgroundColor = "#6e0004";
+              wrong[i].style.color = "#fff";
+              feedback.innerHTML = "Incorrect..";
+            });
+          };
+
+          // Reset
+          let but = document.querySelectorAll(".but");
+          document.querySelector("#reset").onclick = function() {
+            feedback.innerHTML = "";
+            for (let i = 0; i < but.length; i++) {
+              but[i].style.backgroundColor = "#d9edff";
+              but[i].style.color = "#000";
+            };
+          };
+
+          // Free Response Question Functions
+
+          // Declare feedback variable
+          let feedback2 = document.querySelector("#feedback2");
+
+          // Answer
+          let input = document.querySelector("input");
+          document.querySelector("#check").addEventListener("click", function() {
+            if (input.value === "Madrid") {
+              input.style.backgroundColor = "#1d5e03";
+              input.style.color = "#fff";
+              feedback2.innerHTML = "CORRECT!"
+            } else {
+              input.style.backgroundColor = "#6e0004";
+              input.style.color = "#fff";
+              feedback2.innerHTML = "Incorrect.."
+            };
           });
 
-          document.querySelector("#blue").onclick = function() {
-            let colour = document.querySelector("#blue");
-            colour.style.backgroundColor = "#6e0004";
-            colour.style.color = "#fff";
-            incorrect.innerHTML = "INCORRECT";
+          // Reset
+          document.querySelector("#reset2").onclick = function() {
+            feedback2.innerHTML = "";
+            input.value = "";
+            input.style.backgroundColor = "#fff";
+            input.style.color = "#000"
           };
-
-          document.querySelector("#green").onclick = function() {
-            let colour = document.querySelector("#green");
-            colour.style.backgroundColor = "#6e0004";
-            colour.style.color = "#fff";
-            incorrect.innerHTML = "INCORRECT";
-          };
-
-          document.querySelector("#polka").onclick = function() {
-            let colour = document.querySelector("#polka");
-            colour.style.backgroundColor = "#6e0004";
-            colour.style.color = "#fff";
-            incorrect.innerHTML = "INCORRECT";
-          };
-
-          document.querySelector("#teal").onclick = function() {
-            let colour = document.querySelector("#teal");
-            colour.style.backgroundColor = "#6e0004";
-            colour.style.color = "#fff";
-            incorrect.innerHTML = "INCORRECT";
-          };
-
-          document.querySelector("#brown").onclick = function() {
-            let colour = document.querySelector("#brown");
-            colour.style.backgroundColor = "#6e0004";
-            colour.style.color = "#fff";
-            incorrect.innerHTML = "INCORRECT";
-          };
-
-          //MORE FUNCTIONS HERE PLS
-
         });
 
         </script>
 
     </head>
+
     <body>
 
         <div class="jumbotron">
@@ -73,32 +85,38 @@
 
         <div class="container">
 
+            <!-- Multiple Choice Question -->
             <div class="section">
                 <h2>Part 1: Multiple Choice </h2>
                 <hr>
                 <h3>What colour are my underpants?</h3>
-                <p id="incorrect"></p>
-                <button class="but" id="blue">Blue</button>
-                <button class="but" id="green">Green</button>
-                <button class="but" id="black">Black</button>
-                <button class="but" id="polka">Polkadot</button>
-                <button class="but" id="teal">Teal</button>
-                <button class="but" id="brown">Brown</button>
+                <p id="feedback"></p>
+                <button type="button" class="wrong but">Blue</button>
+                <button type="button" class="wrong but">Green</button>
+                <button type="button" class="but" id="black">Black</button>
+                <button type="button" class="wrong but">Polkadot</button>
+                <button type="button" class="wrong but">Teal</button>
+                <button type="button" class="wrong but">Brown</button>
               </br>
               </br>
-                <button id="reset">Reset</button>
+                <button type="button" id="reset">Reset</button>
             </div>
 
+            <!-- Free Response Section -->
             <div class="section">
                 <h2>Part 2: Free Response</h2>
                 <hr>
                 <h3>What is the capital of Spain?</h3>
-                <p id="incorrect2"></p>
-
-                <!-- TODO: Add free response question here -->
-
+                <p id="feedback2"></p>
+                <input id="answer" type="text"
+                  name="Spain" placeholder="Answer.." autocomplete="off">
+              </br>
+              </br>
+                <button type="button" id="check">Check</button>
+              </br>
+              </br>
+                <button type="button" id="reset2">Reset</button>
             </div>
-
         </div>
     </body>
 </html>
