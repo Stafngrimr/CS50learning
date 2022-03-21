@@ -1,56 +1,108 @@
 /*
-  Must contain:
-  At least 5 different properties
+  homepage.html
+
+	body {
+		background-color: #1ea67b;
+	  color: white;
+	}
+
 */
 
 body {
-  background-color: #1ea67b;
-  color: white;
-
-}
-
-div.header {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-flow: row wrap;
-  gap: 10px;
-  padding: 10px;
-}
-
-div.links {
-  display: flex;
-  justify-content: center;
-  flex-grow: grow;
-  gap: 10px;
+	background-color: #45a39c;
+	display: flex;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
 }
 
 header {
-  border: 2px solid red;
+	width: 100%;
+	flex-grow: 1;
+	background-color: #327873;
+  padding: 10px;
+	border-bottom: 1px dashed #fff;
 }
 
 main {
   display: flex;
   justify-content: center;
-  align-items: stretch;
   flex-flow: row wrap;
+	flex-grow: 2;
   gap: 10px;
   padding: 10px;
-  border: 2px solid blue;
+}
+
+a {
+	color: white;
+}
+
+#myTabContent {
+	padding: 15px;
 }
 
 footer {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-flow: row wrap;
-  gap: 10px;
-  padding: 10px;
-  border: 2px solid green;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	padding-top: 10px;
+  border-top: 1px dashed #fff;
+	background-color: #327873;
 }
 
+div.bio {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
 
+div.title {
+	flex-grow: 2;
+	align-items: center;
+}
 
-h2 {
-  padding: 10px;
+div.links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 30px;
+}
+
+div.three {
+	border: 2px solid red;
+	flex-grow: 1;
+
+}
+
+div.container {
+	display: flex;
+	width: 30%;
+	padding: 20px;
+	flex-flow: row wrap;
+}
+
+.item {
+}
+
+/* To use! */
+
+mark {
+  just adds emphasis, change the background-color:
+}
+
+time {
+  check out datetime=""
+}
+
+output {
+  shows output; requires javascript
+}
+
+abbr {
+  tooltip with long version
 }
