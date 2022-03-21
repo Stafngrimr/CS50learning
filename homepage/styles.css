@@ -1,0 +1,56 @@
+/*
+  Must contain:
+  At least 5 different properties
+*/
+
+body {
+  background-color: #1ea67b;
+  color: white;
+
+}
+
+div.header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: row wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+div.links {
+  display: flex;
+  justify-content: center;
+  flex-grow: grow;
+  gap: 10px;
+}
+
+header {
+  border: 2px solid red;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: row wrap;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid blue;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-flow: row wrap;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid green;
+}
+
+
+
+h2 {
+  padding: 10px;
+}
