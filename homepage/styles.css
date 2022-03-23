@@ -1,46 +1,34 @@
 /*
   homepage.html
-
-	body {
-		background-color: #1ea67b;
-	  color: white;
-	}
-
 */
 
 body {
-	background-color: #45a39c;
 	display: flex;
-	color: #fff;
+	background-color: #d1be9b;
+	color: white;
 	height: 100%;
 	width: 100%;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
+	align-items: center;
 }
 
 header {
 	width: 100%;
-	flex-grow: 1;
-	background-color: #327873;
+	background-color: #7d4215;
   padding: 10px;
-	border-bottom: 1px dashed #fff;
+	border-bottom: 4px double white;
 }
 
 main {
   display: flex;
+	flex-flow: row wrap;
   justify-content: center;
-  flex-flow: row wrap;
-	flex-grow: 2;
-  gap: 10px;
-  padding: 10px;
-}
-
-a {
-	color: white;
-}
-
-#myTabContent {
-	padding: 15px;
+	width: 90%;
+	max-width: 1000px;
+	margin-top: 5%;
+	margin-bottom: 20%;
+	border: 3px double white;
 }
 
 footer {
@@ -49,10 +37,11 @@ footer {
 	bottom: 0;
 	left: 0;
 	right: 0;
+	background-color: #7d4215;
 	justify-content: center;
 	padding-top: 10px;
-  border-top: 1px dashed #fff;
-	background-color: #327873;
+  border-top: 4px double #fff;
+
 }
 
 div.bio {
@@ -62,8 +51,7 @@ div.bio {
 }
 
 div.title {
-	flex-grow: 2;
-	align-items: center;
+	text-align: center;
 }
 
 div.links {
@@ -81,12 +69,40 @@ div.three {
 
 div.container {
 	display: flex;
-	width: 30%;
-	padding: 20px;
-	flex-flow: row wrap;
+	padding: 10px;
+	flex-flow: column wrap;
 }
 
-.item {
+div.container-index {
+	display: flex;
+	padding: 10px;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+div.container-find {
+	display: flex;
+	padding: 10px;
+	max-width: 600px;
+	flex-flow: column wrap;
+}
+
+a {
+	color: white;
+	text-decoration: underline;
+}
+
+#myTabContent {
+	padding: 15px;
+}
+
+img.portrait {
+	max-height: 300px;
+	width: auto;
+	object-fit: contain;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /* To use! */
