@@ -27,7 +27,7 @@ main {
 	width: 90%;
 	max-width: 1000px;
 	margin-top: 5%;
-	margin-bottom: 20%;
+	margin-bottom: 10%;
 	border: 3px double white;
 }
 
@@ -41,13 +41,6 @@ footer {
 	justify-content: center;
 	padding-top: 10px;
   border-top: 4px double #fff;
-
-}
-
-div.bio {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
 }
 
 div.title {
@@ -59,26 +52,29 @@ div.links {
   justify-content: center;
   flex-grow: 1;
   gap: 30px;
-}
-
-div.three {
-	border: 2px solid red;
-	flex-grow: 1;
-
-}
-
-div.container {
-	display: flex;
-	padding: 10px;
-	flex-flow: column wrap;
+	min
 }
 
 div.container-index {
 	display: flex;
 	padding: 10px;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 	justify-content: center;
 	gap: 10px;
+}
+
+div.container-bio {
+	display: flex;
+	flex-flow: column wrap;
+	padding: 10px;
+}
+
+div.container-gallery {
+	display: flex;
+	padding: 10px;
+	flex: 1;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 div.container-find {
@@ -98,27 +94,9 @@ a {
 }
 
 img.portrait {
-	max-height: 300px;
+	max-height: 400px;
 	width: auto;
 	object-fit: contain;
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-
-/* To use! */
-
-mark {
-  just adds emphasis, change the background-color:
-}
-
-time {
-  check out datetime=""
-}
-
-output {
-  shows output; requires javascript
-}
-
-abbr {
-  tooltip with long version
 }
