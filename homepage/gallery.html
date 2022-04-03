@@ -14,76 +14,71 @@
       <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-    <header>
-			<div class="title">
-        <h1>
-					Anne Boleyn's Homepage
-				</h1>
+			<div id="title">
+				<h2>Anne Boleyn's Homepage</h2>
 			</div>
-			<div class="links">
-				<h2 class="item">
+
+			<main>
+				<div id="links">
 					<a href="index.html">
 						<button type="button" class="btn btn-light">Home</button>
 					</a>
-				</h2>
-        <h2 class="item">
 					<a href="bio.html">
 						<button type="button" class="btn btn-light">Bio</button>
 					</a>
-					</h2>
-        <h2 class="item">
 					<a href="gallery.html">
 						<button type="button" class="btn btn-light">Gallery</button>
 					</a>
-				</h2>
-        <h2 class="item">
 					<a href="find.html">
 						<button type="button" class="btn btn-light">Find Me</button>
 					</a>
-				</h2>
-			</div>
-    </header>
-    <main>
-			<div class="container-gallery" style="min-width: 312px">
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	  			<ol class="carousel-indicators">
-	    			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-	    			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-	    			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	  			</ol>
-	  			<div class="carousel-inner">
-	    			<div class="carousel-item active">
-	      			<img src="img/henryone.jpg" class="d-block w-100 portrait" alt="Beloved Henry the Eighth">
-	    			</div>
-	    			<div class="carousel-item">
-	      			<img src="img/henrytwo.jpg" class="d-block w-100 portrait" alt="Beloved Henry the Eighth again">
-	    			</div>
-	    			<div class="carousel-item">
-	      			<img src="img/henrythree.jpg" class="d-block w-100 portrait" alt="Beloved Henry the Eighth and... again">
-	    			</div>
-	  			</div>
-	  			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-	    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-	    			<span class="sr-only">Previous</span>
-	  			</a>
-	  			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-	    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-	    			<span class="sr-only">Next</span>
-	  			</a>
 				</div>
-			</div>
-			<div class="container-gallery" style="padding: 30px;">
-				<div>
-					<h1>Henry VIII</h1>
-					<p>What a handsome chap.</p>
-					<p>Utterly splendid King, with the heart of a lion, the cunning of a
-						fox and the grace of Robert Baratheon. I did for some time think that the King
-					might be modelling some of his behaviour on the late fictional character.</p>
+
+				<div class="container gallery">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		  			<ol class="carousel-indicators">
+		    			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		  			</ol>
+		  			<div class="carousel-inner">
+		    			<div class="carousel-item active">
+		      			<img src="img/henryone.jpg" class="d-block w-100 portrait" alt="Beloved Henry the Eighth" id="henryone">
+		    			</div>
+		    			<div class="carousel-item">
+		      			<img src="img/henrytwo.jpg" class="d-block w-100 portrait" alt="Beloved Henry the Eighth again" id="henrytwo">
+		    			</div>
+		    			<div class="carousel-item">
+		      			<img src="img/henrythree.jpg" class="d-block w-100 portrait" alt="Beloved Henry the Eighth and... again" id="henrythree">
+		    			</div>
+		  			</div>
+		  			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    			<span class="sr-only">Previous</span>
+		  			</a>
+		  			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    			<span class="sr-only">Next</span>
+		  			</a>
+					</div>
+					<div>
+						<h1>Henry VIII</h1>
+						<p id="text2">What a handsome chap.</p>
+						<p id="text3">Utterly splendid King, with the heart of a lion, the cunning of a
+							fox and the grace of Robert Baratheon. I did for some time think that the King
+						might be modelling some of his behaviour on the late fictional character.</p>
+					</div>
 				</div>
-			</div>
-    </main>
-    <footer>
-      <p>Website made by Stafngrimr&copy</p>
-    </footer>
+				<br>
+				<br>
+				<br>
+    	</main>
+
+			<footer>
+				<button type="button" class="btn btn-light btn-sm" id="alive">c.1501</button>
+				<button type="button" class="btn btn-light btn-sm" id="dead">1536</button>
+				<p>Website made by Stafngrimr&copy</p>
+	    </footer>
+		<script src="script.js"></script>
     </body>
 </html>

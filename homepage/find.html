@@ -14,76 +14,80 @@
       <link href="styles.css" rel="stylesheet">
     </head>
     <body>
-    <header>
-			<div class="title">
-        <h1>
-					Anne Boleyn's Homepage
-				</h1>
+
+			<div id="title">
+				<h2>Anne Boleyn's Homepage</h2>
 			</div>
-			<div class="links">
-				<h2 class="item">
+
+			<main>
+
+				<div id="links">
 					<a href="index.html">
 						<button type="button" class="btn btn-light">Home</button>
 					</a>
-				</h2>
-        <h2 class="item">
 					<a href="bio.html">
 						<button type="button" class="btn btn-light">Bio</button>
 					</a>
-					</h2>
-        <h2 class="item">
 					<a href="gallery.html">
 						<button type="button" class="btn btn-light">Gallery</button>
 					</a>
-				</h2>
-        <h2 class="item">
 					<a href="find.html">
 						<button type="button" class="btn btn-light">Find Me</button>
 					</a>
-				</h2>
-			</div>
-    </header>
-    <main>
-			<div class="container-find">
-				<ul class="nav nav-tabs" id="myTab" role="tablist">
-  				<li class="nav-item" role="presentation">
-    				<a class="nav-link active" id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="true">Find Me</a>
-  				</li>
-  				<li class="nav-item" role="presentation">
-    				<a class="nav-link" id="twitter-tab" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-selected="false">Twitter</a>
-  				</li>
-  				<li class="nav-item" role="presentation">
-    				<a class="nav-link" id="insta-tab" data-toggle="tab" href="#insta" role="tab" aria-controls="insta" aria-selected="false">Instagram</a>
-  				</li>
-					<li class="nav-item" role="presentation">
-    				<a class="nav-link" id="email-tab" data-toggle="tab" href="#email" role="tab" aria-controls="email" aria-selected="false">Email Me!</a>
-  				</li>
-				</ul>
-				<div class="tab-content" id="myTabContent">
-  				<div class="tab-pane fade show active" id="address" role="tabpanel" aria-labelledby="address-tab">
-						<address>
-							<mark>Visit Me:</mark><br>
-							Chapel Royal of St Peter ad Vincula<br>
-							35 Tower Hill<br>
-							London, EC3N 4DR<br>
-							England<br>
-							phone: <a href="tel:07446-666-666">07446-666-666</a>
-						</address>
+				</div>
+
+				<div class="container find">
+					<div>
+						<p>I'm incredibly famous so you can find me on the Google!</p>
+						<form action="https://www.google.com/search" method="get">
+	            <input name="q" id="search" type="search" value="Anne Boleyn" style="margin: 10px">
+	            <input type="submit" value="Search">
+        		</form>
+						<p>Or reach out to me on any of the below!</p>
 					</div>
-  				<div class="tab-pane fade" id="twitter" role="tabpanel" aria-labelledby="twitter-tab">
-						Twitter:  <a href="http://twitter.com/Stafngrimr">@annes-head</a>
-					</div>
-  				<div class="tab-pane fade" id="insta" role="tabpanel" aria-labelledby="insta-tab">
-						Instagram: <a href="http://instagram.com/staf_sketches">@annieboleyn</a>
-					</div>
-					<div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="email-tab">
-						email:  <a href="mailto:stephen@stafngrimr.com">anne@stafngrimr.com</a><br>
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+	  				<li class="nav-item" role="presentation">
+	    				<a class="nav-link active" id="address-tab" data-toggle="tab" href="#address" role="tab" aria-controls="address" aria-selected="true">Find Me</a>
+	  				</li>
+	  				<li class="nav-item" role="presentation">
+	    				<a class="nav-link" id="twitter-tab" data-toggle="tab" href="#twitter" role="tab" aria-controls="twitter" aria-selected="false">Twitter</a>
+	  				</li>
+	  				<li class="nav-item" role="presentation">
+	    				<a class="nav-link" id="insta-tab" data-toggle="tab" href="#insta" role="tab" aria-controls="insta" aria-selected="false">Instagram</a>
+	  				</li>
+						<li class="nav-item" role="presentation">
+	    				<a class="nav-link" id="email-tab" data-toggle="tab" href="#email" role="tab" aria-controls="email" aria-selected="false">Email Me!</a>
+	  				</li>
+					</ul>
+					<div class="tab-content" id="myTabContent">
+	  				<div class="tab-pane fade show active" id="address" role="tabpanel" aria-labelledby="address-tab">
+							<address>
+								<mark>Visit Me:</mark><br>
+								Chapel Royal of St Peter ad Vincula<br>
+								35 Tower Hill<br>
+								London, EC3N 4DR<br>
+								England<br>
+								phone: <a href="tel:07446-666-666">07446-666-666</a>
+							</address>
+						</div>
+	  				<div class="tab-pane fade" id="twitter" role="tabpanel" aria-labelledby="twitter-tab">
+							Twitter:  <a href="http://twitter.com/Stafngrimr">@annes-head</a>
+						</div>
+	  				<div class="tab-pane fade" id="insta" role="tabpanel" aria-labelledby="insta-tab">
+							Instagram: <a href="http://instagram.com/staf_sketches">@annieboleyn</a>
+						</div>
+						<div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="email-tab">
+							email:  <a href="mailto:stephen@stafngrimr.com">anne@stafngrimr.com</a><br>
+						</div>
 					</div>
 				</div>
-			</div>
-    </main>
-    <footer>
-      <p class="item">Website made by Stafngrimr&copy</p>
-    </footer>
+
+    	</main>
+			<footer>
+				<button type="button" class="btn btn-light btn-sm" id="alive">c.1501</button>
+				<button type="button" class="btn btn-light btn-sm" id="dead">1536</button>
+				<p>Website made by Stafngrimr&copy</p>
+	    </footer>
+		<script src="script.js"></script>
     </body>
 </html>

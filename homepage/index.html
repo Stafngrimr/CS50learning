@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 
 <html lang="en">
-		<head>
-    	<!--metatags n stuff-->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-      <title>Anne's Homepage</title>
-      <!--bootstrap links-->
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-      <!--css link-->
-      <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-    <header>
-			<div class="title">
-        <h1>
-					Anne Boleyn's Homepage
-				</h1>
+	<head>
+  	<!--metatags n stuff-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>Anne's Homepage</title>
+    <!--bootstrap links-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!--css link-->
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+		<div id="title">
+			<h2>Anne Boleyn's Homepage</h2>
+		</div>
+
+		<main>
+
+			<div id="links">
+				<a href="index.html">
+					<button type="button" class="btn btn-light">Home</button>
+				</a>
+				<a href="bio.html">
+					<button type="button" class="btn btn-light">Bio</button>
+				</a>
+				<a href="gallery.html">
+					<button type="button" class="btn btn-light">Gallery</button>
+				</a>
+				<a href="find.html">
+					<button type="button" class="btn btn-light">Find Me</button>
+				</a>
 			</div>
-			<div class="links">
-				<h2 class="item">
-					<a href="index.html">
-						<button type="button" class="btn btn-light">Home</button>
-					</a>
-				</h2>
-        <h2 class="item">
-					<a href="bio.html">
-						<button type="button" class="btn btn-light">Bio</button>
-					</a>
-					</h2>
-        <h2 class="item">
-					<a href="gallery.html">
-						<button type="button" class="btn btn-light">Gallery</button>
-					</a>
-				</h2>
-        <h2 class="item">
-					<a href="find.html">
-						<button type="button" class="btn btn-light">Find Me</button>
-					</a>
-				</h2>
+
+			<div class="container index">
+				<img src="img/anne.jpg" alt="Anne Boleyn Portrait" class="portrait" id="annehead">
+				<p style="text-align: center;">Image from <a href="https://thetudortravelguide.com/2019/09/21/hever-castle/">English school</a></p>
+				<p id="text">Welcome to my page! My name is <mark>Anne Boleyn</mark> and I'm just starting out in my journey to learn how to <abbr>HTML</abbr>. I've always found the internet fascinating, and it's really allowed me to explore my love of cats and witty banter. I'm a bit of a white witch on the side, (slide into my DMs and I'll show you my extra pinky) but my true passion and goal in life was to be <mark>Queen</mark> of England. And I smashed it... for a bit. You'll find more details in my bio page.</p>
+				<p>Thanks for coming and have a great time! Check out my other pages and click on the buttons in the footer to see my future..</p>
 			</div>
-    </header>
-    <main>
-			<div class="container-index">
-					<img src="img/AnneBoleynHever.jpg" alt="Anne Boleyn Portrait" class="portrait">
-					<p style="text-align: center;">Image from <a href="https://thetudortravelguide.com/2019/09/21/hever-castle/">English school</a></p>
-					<p>Welcome to my page! My name is <mark>Anne Boleyn</mark> and I'm just starting out in my journey to learn how to <abbr>HTML</abbr>. I've always found the internet fascinating, and it's really allowed me to explore my love of cats and witty banter. I'm a bit of a white witch on the side, (slide into my DMs and I'll show you my extra pinky) but my true passion and goal in life was to be <mark>Queen</mark> of England. And I smashed it... for a bit. More details in my bio page.<br>
-					Thanks for coming and have a great time!</p>
-			</div>
-    </main>
+			<br>
+			<br>
+			<br>
+	  </main>
+
     <footer>
-      <p class="item">Website made by Stafngrimr&copy</p>
+			<button type="button" class="btn btn-light btn-sm" id="alive">c.1501</button>
+			<button type="button" class="btn btn-light btn-sm" id="dead">1536</button>
+			<p>Website made by Stafngrimr&copy</p>
     </footer>
-		<script src="script.js"></script>
-    </body>
+	<script src="script.js"></script>
+  </body>
 </html>

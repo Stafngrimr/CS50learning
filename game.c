@@ -32,10 +32,6 @@ char *item2 = "Two Mana potions";
 char *item3 = "A Vanklet's studded belt";
 int choice = 0;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> e84fb790cdf27876796b55baf3fcba142d4f4146
 int main(void)
 {
   // Intro
